@@ -12,7 +12,7 @@ Full research paper and release notes can be found here: https://openai.com/rese
 
 This project joins the power of the GPT-4V LLM with the popular social media platform Instagram.
 
-![system overview](documentation/system_overview.png)
+![system overview](documentation/system_overview.PNG)
 
 ### Results
 
@@ -41,7 +41,7 @@ And if you pull up Kim K's profile, you can start to see how the LLM came to thi
 
 Yep, checks out. See this post from Jan 29, 2024:
 
-![instagram post of kim kardashian skiing](documentation/kim_k_skiing.png)
+![instagram post of kim kardashian skiing](documentation/kim_k_skiing.PNG)
 
 Link to post: https://www.instagram.com/p/C2sUrluxLar/
 
@@ -112,7 +112,7 @@ flask run
 
 Navigate here in your web browser: http://localhost:5000/. The result should look something like this:
 
-![user_interface](documentation/user_interface.png)
+![user_interface](documentation/user_interface.PNG)
 
 ### References
 
