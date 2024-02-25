@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Instagram with Generative AI</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}" />
+</head>
+
+<body>
+  <h3>Ask anything about an Instagram user you follow (or who's public)</h3>
+  <form action="/" method="post">
+    <input type="text" name="username" placeholder="Enter their Instagram username here" required />
+    <input type="text" name="prompt" placeholder="What would you like to know?" required />
+    <input type="submit" value="Ask" />
+  </form>
+  {% if username %}
+  <br />
+  <div class="username"><b>Instagram User: </b>{{ username }}</div>
+  {% endif %}
+  {% if prompt %}
+  <br />
+  <div class="prompt"><b>Prompt: </b>{{ prompt }}</div>
+  {% endif %}
+  {% if result %}
+  <br />
+  <div class="result"><b>AI's Response: </b>{{ result }}</div>
+  {% endif %}
+</body>
